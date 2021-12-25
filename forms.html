@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <form action="mailto:rishavbhardwaj82@gmail.com" method="get"> 
+        <!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. So, for now, we will write it as backend.php. All the data submitted in a form will be stored automatically in the backend “backend.php” after submitting it. -->
+        
+            <div>
+            <label for="name">NAME:</label>
+            <input type="text" name="myname" id="name">
+            <!-- The name here is used so that the backend can recognize the tag that we are using. -->
+        </div>
+        <br>
+        <!-- <input>tags which are present inside the form, where the user provides the input. These inputs can be of any type whether text, button, checkbox, date, time, etc. Input Tags are used to create interactive controls for web-based forms in order to accept data from the user.  -->
+
+        <!-- The <span> is an in-line element and <div> is a block element. Which means, if we use two separate div tags for different inputs, then all the inputs will come on different lines. -->
+        <div>
+            <!-- To get the input as text, the syntax is -->
+            <label for="role1">ROLE:</label>
+            <input type="text" name="myrole" id="role1">
+        </div>
+        <br>
+        <div>
+            <!-- To get the input type as an email in the form, the syntax is- -->
+            <label for="email">EMAIL:</label>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+
+        <div>
+            <label for="date">DOB:</label>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+
+        <div>
+            <!-- To add any numeric text in the HTML form, the syntax is- -->
+            <label for="mobile">MOBILE:</label>
+            <input type="number" name="mymobile" id="mobile">
+        </div>
+        <br>
+        
+        <div>
+            <label for="eligible">ELIGIBLE:</label>
+            <!-- ELIGIBLE:<input type="checkbox" name="myeligibility" checked> -->
+            <input type="checkbox" name="myeligibility" id="eligible" >
+            <!-- if we use checked it will be by default checked -->
+        </div>
+        <br>
+        <div>
+            GENDER: <input type="radio" name="mygender">male <input type="radio" name="mygender"> female <input
+            type="radio" name="mygender"> other
+        </div>
+        <br>
+
+
+        <div>
+            <label for="write">WRITE ABOUT YOURSELF</label>
+            <br>
+            <textarea name="mytext" cols="60" rows="10" id="write"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">CAR:</label>
+            <select name="mycar" id="car">indica
+                <option value="ferarri">ferarri </option>
+                <option value="mercedes">mercedes</option>
+                <option value="honda" selected>honda </option>
+                <option value="swift">swift</option>
+                <option value="breeza">breeza</option>
+            </select>
+            
+        </div>
+        <br>
+        <div>
+            <!-- To reset all the information, entered in the form, we take the help of a reset button. To get the reset button, we have to write- -->
+            <input type="reset" value="RESET NOW ">
+        </div>
+        <br>
+        <div>
+            <!-- To get the submit button in the form, the syntax is- -->
+            <input type="submit" >
+        </div>
+    </form>
+</body>
+
+</html>
